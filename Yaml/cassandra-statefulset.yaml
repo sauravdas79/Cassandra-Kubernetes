@@ -28,7 +28,7 @@ spec:
         imagePullPolicy: Always
         volumeMounts:
         - name: cassandra-data
-	  mountPath: /bitnami
+          mountPath: /bitnami
       containers:
       - image: "bitnami/cassandra:latest"
         imagePullPolicy: Always
