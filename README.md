@@ -33,3 +33,7 @@ StatefulSet Cassandra configuration object is created and through environment va
 Now it is time to create the StatefulSets:
 Below is the yaml file which you use and modify accordingly.
 https://github.com/sauravdas79/Cassandra-Kubernetes/blob/master/Yaml/cassandra-statefulset.yaml
+
+# Service
+StatefulSet can use a headless service to control the domain of its pods. The domain managed by this service takes the form $(service name).$(namespace).svc.cluster.local, where cluster.local is the cluster domain. As each pod is created, it gets a matching DNS subdomain, taking the form $(podname).$(service name).$(namespace).svc.cluster.local. 
+Below is the service file yaml
