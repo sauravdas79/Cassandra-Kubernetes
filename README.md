@@ -32,3 +32,4 @@ Yaml/persistent-volume.yaml
 StatefulSet Cassandra configuration object is created and through environment variables exposed by the specific Cassandra Docker image here I have used Bitnami/Cassandra Image. One important aspect is the specification of Cassandra seeds. It is recommended that at least one seed node is specified from each data center. So the very first pod in each data center is specified as a seed node. 
 Now it is time to create the StatefulSets:
 Below is the yaml file which you use and modify accordingly.
+https://github.com/sauravdas79/Cassandra-Kubernetes/blob/master/Yaml/cassandra-statefulset.yaml
