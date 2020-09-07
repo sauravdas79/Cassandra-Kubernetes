@@ -63,7 +63,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: status.podIP
-	readinessProbe:
+        readinessProbe:
           exec:
             command:
             - /bin/bash
