@@ -25,4 +25,5 @@ You can create a storage class to do auto provision the pv for cloud base pv.bel
 https://kubernetes.io/docs/concepts/storage/storage-classes/
 
 $ kubectl create -f persistent-volume.yaml
-Below is the link to persistenet volume yaml file : Yaml/persistent-volume.yaml
+Below is the link to persistenet volume yaml file : https://github.com/sauravdas79/Cassandra-Kubernetes/blob/master/Yaml/persistent-volume.yaml
+Yaml/persistent-volume.yaml
