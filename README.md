@@ -21,5 +21,7 @@ $ mkdir -p /data/cassandra/cassandra-data-a
 $ mkdir -p /data/cassandra/cassandra-data-b
 $ mkdir -p /data/cassandra/cassandra-data-c
 
+You can create a storage class to do auto provision the pv for cloud base pv.below is the link
+https://kubernetes.io/docs/concepts/storage/storage-classes/
 
  
