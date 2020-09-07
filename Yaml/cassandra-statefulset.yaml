@@ -46,7 +46,7 @@ spec:
           capabilities:
             add:
             - IPC_LOCK
-	env:
+        env:
         - name: MAX_HEAP_SIZE
           value: 512M
         - name: HEAP_NEWSIZE
