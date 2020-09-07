@@ -40,3 +40,8 @@ Persistent Volume claim template is used to bind to persistent volume is part of
 # Service
 StatefulSet can use a headless service to control the domain of its pods. The domain managed by this service takes the form $(service name).$(namespace).svc.cluster.local, where cluster.local is the cluster domain. As each pod is created, it gets a matching DNS subdomain, taking the form $(podname).$(service name).$(namespace).svc.cluster.local. 
 Below is the service file yaml
+https://github.com/sauravdas79/Cassandra-Kubernetes/blob/master/Yaml/cassandar-service.yaml
+
+$ kubectl create -f https://github.com/sauravdas79/Cassandra-Kubernetes/blob/master/Yaml/cassandar-service.yaml
+
+So we are done your Cassandra 3 nodes cluster is created 
