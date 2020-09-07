@@ -24,4 +24,56 @@ $ mkdir -p /data/cassandra/cassandra-data-c
 You can create a storage class to do auto provision the pv for cloud base pv.below is the link
 https://kubernetes.io/docs/concepts/storage/storage-classes/
 
+$ kubectl create -f persistent-volume.yaml
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cassandra-data-a
+  labels:
+    type: local
+    app: cassandra
+sec:
+  storageClassName: gp2
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /data/cassandra/cassandra-data-a
+  persistentVolumeReclaimPolicy: Recycle
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cassandra-data-b
+  labels:
+    type: local
+    app: cassandra
+spec:
+  storageClassName: gp2
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /data/cassandra/cassandra-data-b
+  persistentVolumeReclaimPolicy: Recycle
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cassandra-data-c
+  labels:
+    type: local
+    app: cassandra
+spec:
+  storageClassName: gp2
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /data/cassandra/cassandra-data-c
+  persistentVolumeReclaimPolicy: Recycle
  
